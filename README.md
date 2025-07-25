@@ -238,7 +238,7 @@ This system combines distributed computing with PySpark, streaming analytics wit
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/fraud-detection-system.git
+git clone https://github.com/troybllo/realtime-fraud-detection.git
 cd fraud-detection-system
 
 # Set up environment
