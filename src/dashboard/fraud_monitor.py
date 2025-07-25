@@ -11,7 +11,7 @@ st.set_page_config(page_title="Fraud Detection Monitor", layout="wide")
 
 class FraudDashboard:
     def __init__(self):
-        st.title("🚨 Real-Time Fraud Detection Dashboard")
+        st.title("Real-Time Fraud Detection Dashboard")
 
         # Initialize session state
         if "alerts" not in st.session_state:
@@ -148,7 +148,7 @@ class FraudDashboard:
             st.plotly_chart(self.create_risk_distribution(), use_container_width=True)
 
         # Alerts section
-        st.subheader("🚨 Recent Fraud Alerts")
+        st.subheader("Recent Fraud Alerts")
         st.dataframe(self.create_alert_table(), use_container_width=True)
 
         # Model performance metrics

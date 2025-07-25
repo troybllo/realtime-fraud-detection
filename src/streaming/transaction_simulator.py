@@ -68,7 +68,7 @@ class TransactionSimulator:
 
     def simulate_fraud_attack(self, target_user, num_transactions=5):
         """Simulate a fraud attack on specific user"""
-        print(f"🚨 Simulating fraud attack on user {target_user}")
+        print(f"Simulating fraud attack on user {target_user}")
         for i in range(num_transactions):
             transaction = self.generate_fraud_transaction(target_user)
             self.producer.produce(
