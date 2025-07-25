@@ -30,7 +30,7 @@ ENV/
 
 # Jupyter Notebook
 .ipynb_checkpoints/
-*.ipynb
+*/.ipynb_checkpoints/*
 
 # IDEs
 .vscode/
@@ -51,10 +51,15 @@ Thumbs.db
 # Data files
 data/raw/*.csv
 data/processed/*.csv
+data/processed/*.parquet
 data/streaming/*.json
+data/alerts/*.csv
+data/alerts/*.txt
+*.csv
 *.parquet
-*.h5
-*.hdf5
+*.json
+*.xlsx
+*.xls
 
 # Models
 models/*.pkl
@@ -75,9 +80,17 @@ mlruns/
 metastore_db/
 derby.log
 spark-warehouse/
+*.crc
+checkpoints/
 
 # Docker
 .dockerignore
+
+# Kafka
+kafka-logs/
+
+# Streamlit
+.streamlit/
 
 # Environment variables
 .env
@@ -97,3 +110,22 @@ htmlcov/
 
 # Documentation
 docs/_build/
+
+# Security & Sensitive files
+*.key
+*.pem
+*.crt
+config/secrets.yaml
+config/credentials.json
+
+# MacOS specific
+.AppleDouble/
+.LSOverride
+Icon?
+
+# Windows specific
+desktop.ini
+$RECYCLE.BIN/
+
+# Generated files
+*.generated.*

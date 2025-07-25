@@ -1,0 +1,2 @@
+# This file keeps the trained models directory in git
+# Model files will be gitignored but directory structure is preserved

@@ -1,0 +1,2 @@
+# This file keeps the alerts directory in git
+# Real alert files will be gitignored but directory structure is preserved
